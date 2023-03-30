@@ -43,7 +43,7 @@ object Main {
   }
 
   def getRatings: Array[String] = {
-    val fileName = "src/main/resources/movie_metadata.csv"
+    val fileName = "src/test/resources/movie_metadata.csv"
     val columnIndex = 25
 
     val columnValues = Source.fromFile(fileName).getLines().map(_.split(",")(columnIndex))
